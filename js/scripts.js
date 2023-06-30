@@ -2,12 +2,17 @@ console.log("loaded");
 let arr = []
 
 function counting(userInput) {
-  for (let index = 1; 1 <= userInput; index++) {
-    arr[1] = 1;
+  for (let index = 0; index <= userInput; index++) {
+    arr[index] = index;
 
-    if (arr[1] === 1) {
-      arr[1] = "beep"
-      console.log(arr);
+    if (arr[index] === 1) {
+      arr[index] = "beep"
+    } else if (arr[index] === 2) {
+      arr[index] = "boop"
+    } else if (arr[index] === 3) {
+      arr[index] = "neighbor"
+    } else {
+      arr[index] = index
     }
 
   }
