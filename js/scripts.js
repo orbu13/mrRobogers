@@ -3,21 +3,19 @@ let arr = []
 
 function counting(userInput) {
   for (let index = 0; index <= userInput; index++) {
-    arr[index] = index;
+    arr[index] = index.toString();
 
-    if (arr.includes(3)) {
-      arr[index] = "neighbor"
-    } else if (arr.includes(2)) {
-      arr[index] = "boop"
-    } else if (arr.includes(1)) {
-      arr[index] = "beep"
+    if (arr[index].includes("3")) {
+      arr[index] = "Won't you be my neighbor?!"
+    } else if (arr[index].includes("2")) {
+      arr[index] = "BOOP!"
+    } else if (arr[index].includes("1")) {
+      arr[index] = "BEEP!"
     } else {
-      arr[index] = index
+      arr[index] = index.toString();
     }
 
   }
   console.log(arr);
-
-
 }
 
