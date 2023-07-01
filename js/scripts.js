@@ -1,4 +1,13 @@
 console.log("loaded");
+// User Interface Logic
+
+function handleSubmit(event) {
+  event.preventDefult();
+
+  let inputUser = document.querySelector("#numberInput").value
+}
+
+// Business Logic
 let arr = []
 
 function counting(userInput) {
