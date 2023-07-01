@@ -1,11 +1,15 @@
 console.log("loaded");
 // User Interface Logic
 
-function handleSubmit(event) {
-  event.preventDefult();
+let inputUser = document.querySelector("#numberInput");
 
-  let inputUser = document.querySelector("#numberInput").value
-}
+let form = document.querySelector("form");
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  let userInputValue = inputUser.value;
+  console.log(userInputValue);
+})
 
 // Business Logic
 let arr = []
