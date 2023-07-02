@@ -1,20 +1,22 @@
 console.log("loaded");
+
 // User Interface Logic
-
+let arr = []
 let inputTag = document.querySelector("#numberInput");
-
 let form = document.querySelector("form");
+
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
   let userInput = inputTag.value;
   console.log(userInput);
   counting(userInput);
+  let paragraph = document.querySelector("#display-result")
+  paragraph.innerText = arr
+
 })
 
 // Business Logic
-let arr = []
-
 function counting(userInput) {
   for (let index = 0; index <= userInput; index++) {
     arr[index] = index.toString();
@@ -28,7 +30,6 @@ function counting(userInput) {
     } else {
       arr[index] = index.toString();
     }
-
   }
   console.log(arr);
 }
