@@ -1,5 +1,9 @@
 body {
+  margin: auto;
   border: 10px solid transparent;
   padding: 15px;
-  /* border-image: url(border.png) 20% round; */
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(/border.png) 20% round;
+  width: 50%;
 }

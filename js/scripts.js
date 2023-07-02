@@ -13,6 +13,7 @@ form.addEventListener('submit', function (event) {
   counting(userInput);
   let paragraph = document.querySelector("#display-result")
   paragraph.innerText = arr
+  inputTag.value = "";
 
 })
 
