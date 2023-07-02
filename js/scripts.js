@@ -1,14 +1,15 @@
 console.log("loaded");
 // User Interface Logic
 
-let inputUser = document.querySelector("#numberInput");
+let inputTag = document.querySelector("#numberInput");
 
 let form = document.querySelector("form");
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
-  let userInputValue = inputUser.value;
-  console.log(userInputValue);
+  let userInput = inputTag.value;
+  console.log(userInput);
+  counting(userInput);
 })
 
 // Business Logic
